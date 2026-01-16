@@ -5,6 +5,10 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from src.pipeline.predict_pipeline import CustomData,PredictPipeline
 
+import sys, os
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+
+
 application=Flask(__name__)
 
 app=application
